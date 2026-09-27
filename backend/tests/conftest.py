@@ -4,7 +4,8 @@ from fastapi.testclient import TestClient
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from sqlalchemy.pool import StaticPool
 
-from app.main import app
+import app.models  # Import models to register metadata
+from app.main import app as fastapi_app
 from app.core.database import Base, get_db
 
 TEST_DATABASE_URL = "sqlite+aiosqlite:///:memory:"
@@ -28,11 +29,27 @@ async def override_get_db() -> AsyncGenerator[AsyncSession, None]:
         await conn.run_sync(Base.metadata.create_all)
     
     async with TestingAsyncSessionLocal() as session:
-        yield session
+        try:
+            yield session
+            await session.commit()
+        except Exception:
+            await session.rollback()
+            raise
+        finally:
+            await session.close()
 
-app.dependency_overrides[get_db] = override_get_db
+fastapi_app.dependency_overrides[get_db] = override_get_db
 
 @pytest.fixture
 def client():
-    with TestClient(app) as c:
+    with TestClient(fastapi_app) as c:
         yield c
+
+@pytest.fixture
+async def db_session() -> AsyncGenerator[AsyncSession, None]:
+    async with engine_test.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+    
+    async with TestingAsyncSessionLocal() as session:
+        yield session
+        await session.rollback()

@@ -17,7 +17,10 @@ dependencies = [
     "asyncpg>=0.29.0",
     "psycopg2-binary>=2.9.9",
     "python-dotenv>=1.0.1",
-    "aiosqlite>=0.20.0"
+    "python-multipart>=0.0.9",
+    "aiosqlite>=0.20.0",
+    "pypdf>=4.0.0",
+    "pillow>=10.0.0"
 ]
 
 [project.optional-dependencies]

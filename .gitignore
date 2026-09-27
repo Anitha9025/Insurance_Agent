@@ -1,36 +1,35 @@
-# dependencies
-/node_modules
-/.pnp
+# Frontend Node Dependencies & Next.js Builds
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+node_modules/
+.next/
+out/
+build/
+.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# debug
+# Testing & Debug Logs
+coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
+# Environment Variables & Local Configs
+frontend/.env*.local
+frontend/.env
+backend/.env
 .env*.local
 .env
-
-# vercel
 .vercel
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
 
-# python & backend
+# Python & Backend
 backend/venv/
 venv/
 __pycache__/
@@ -39,7 +38,5 @@ __pycache__/
 .pytest_cache/
 *.db
 *.sqlite3
-backend/.env
 chroma_db/
 uploads/
-

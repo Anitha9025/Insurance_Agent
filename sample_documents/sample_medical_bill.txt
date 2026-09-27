@@ -1,0 +1,39 @@
+================================================================================
+                    SPRINGFIELD REGIONAL MEDICAL CENTER
+                       Department of Emergency Medicine
+                        100 Hospital Drive, Suite 100
+                            Springfield, IL 62702
+================================================================================
+
+PATIENT STATEMENT & MEDICAL RECEIPT
+
+Statement Date: September 03, 2024
+Account Number: ACT-884920
+Patient Name: Sarah Jenkins
+Date of Birth: 05/14/1988
+Date of Service: September 01, 2024
+Attending Physician: Dr. Amanda Roberts, MD (License #MD-99120)
+Primary Diagnosis: Cervical Strain / Minor Whiplash (ICD-10 Code: S13.4XXA)
+
+SERVICES RENDERED:
+--------------------------------------------------------------------------------
+CPT Code   Description                           Charge Amount
+--------------------------------------------------------------------------------
+99283      Emergency Department Visit (Level 3)   $750.00
+72125      CT Scan Cervical Spine w/o Contrast    $850.00
+99070      Cervical Collar / Soft Support Brace    $120.00
+99071      Prescription Anti-Inflammatory (Rx)     $130.00
+--------------------------------------------------------------------------------
+
+TOTAL BILLING SUMMARY:
+Total Gross Charges:      $1,850.00
+Insurance Adjustment:         $0.00 (Pending Claim Processing)
+Patient Copay Paid:          $50.00
+--------------------------------------------------------------------------------
+TOTAL CLAIM AMOUNT:       $1,850.00
+
+Physician Notes: Patient evaluated following low-speed motor vehicle collision. X-ray/CT cleared for fracture. Recommended 3 days rest, soft cervical collar as needed, and follow-up with PCP if pain persists.
+
+Billing Dept Contact: (555) 901-4400
+Status: Pending Insurance Direct Reimbursement
+================================================================================

@@ -61,6 +61,20 @@ class Settings(BaseSettings):
     OLLAMA_MODEL: str = "llama3"
     CHROMA_PERSIST_DIR: str = "./chroma_db"
 
+    # Cloud Multimodal Vision Configuration (Phase 4)
+    VISION_PROVIDER: str = "gemini"
+    VISION_MODEL: str = "gemini-1.5-flash"
+    VISION_API_KEY: str = ""
+
+    # Phase 6: Cloud LLM, Embedding, RAG & Memory Configuration
+    LLM_PROVIDER: str = "gemini"
+    LLM_MODEL: str = "gemini-1.5-flash"
+    LLM_API_KEY: str = ""
+    EMBEDDING_PROVIDER: str = "gemini"
+    EMBEDDING_MODEL: str = "text-embedding-004"
+    VECTOR_STORE: str = "postgres"
+    MEMORY_ENABLED: bool = True
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",

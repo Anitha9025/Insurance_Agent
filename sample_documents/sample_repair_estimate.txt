@@ -1,0 +1,47 @@
+================================================================================
+                         APEX AUTO BODY & REPAIR SERVICES
+                           1042 Industrial Parkway, Suite 4B
+                             Springfield, IL 62701
+                               Tel: (555) 234-8901
+================================================================================
+
+REPAIR ESTIMATE & DAMAGE ASSESSMENT REPORT
+
+Estimate Number: EST-2024-8842
+Date: September 02, 2024
+Claim Reference: CLM-2024-001
+Customer Name: Sarah Jenkins
+Policy Number: POL-9923841
+
+VEHICLE INFORMATION:
+Make / Model: 2022 Toyota RAV4 XLE (Blue)
+VIN Number: 4T1B11HK5LU129845
+License Plate: 7XYZ89
+Odometer Reading: 28,450 miles
+
+REPAIR LINE ITEMS & PARTS BREAKDOWN:
+--------------------------------------------------------------------------------
+Item  Description                           Parts ($)   Labor (hrs)   Total ($)
+--------------------------------------------------------------------------------
+1.    Front Bumper Cover (OEM Replace)      $650.00      3.5 hrs       $965.00
+2.    Right Front Fender Alignment          $120.00      2.0 hrs       $300.00
+3.    Headlight Assembly (Right Outer)      $480.00      1.0 hrs       $570.00
+4.    Radiator Support Inspection           $0.00        1.5 hrs       $135.00
+5.    Paint Refinish & Clear Coat           $450.00      6.0 hrs       $990.00
+6.    Wheel Alignment & Calibration         $150.00      1.5 hrs       $265.00
+7.    Hazardous Waste Disposal Fee          $45.00       0.0 hrs       $45.00
+--------------------------------------------------------------------------------
+
+COST SUMMARY:
+Total Parts:               $1,895.00
+Total Labor (15.5 hrs):    $1,395.00
+Paint & Supplies:            $450.00
+Sublet / Alignment / Fees:   $510.00
+--------------------------------------------------------------------------------
+SUBTOTAL:                  $4,250.00
+Applicable Tax (0.00%):        $0.00
+--------------------------------------------------------------------------------
+GRAND TOTAL ESTIMATE:      $4,250.00
+
+Authorized Estimator Signature: Marcus Vance (Certified ASE Technician #4492)
+Status: Verified & Pending Insurance Authorization

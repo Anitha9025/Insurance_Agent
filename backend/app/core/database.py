@@ -5,13 +5,23 @@ from app.core.config import settings
 from app.core.logging import logger
 
 # Create Async SQLAlchemy Engine
-# Defaults to settings.async_database_url
-engine = create_async_engine(
-    settings.async_database_url,
-    echo=settings.DEBUG,
-    future=True,
-    pool_pre_ping=True
-)
+try:
+    engine = create_async_engine(
+        settings.async_database_url,
+        echo=settings.DEBUG,
+        future=True,
+        pool_pre_ping=True
+    )
+except ModuleNotFoundError as e:
+    if "asyncpg" in str(e):
+        logger.warning("asyncpg driver not found in Python environment. Falling back to sqlite+aiosqlite.")
+        engine = create_async_engine(
+            "sqlite+aiosqlite:///./dev_fallback.db",
+            echo=settings.DEBUG,
+            future=True
+        )
+    else:
+        raise
 
 # Async Session Factory
 AsyncSessionLocal = async_sessionmaker(
@@ -22,9 +32,7 @@ AsyncSessionLocal = async_sessionmaker(
     autoflush=False
 )
 
-class Base(DeclarativeBase):
-    """Base declarative class for SQLAlchemy ORM models."""
-    pass
+from app.models.base import Base
 
 async def get_db() -> AsyncGenerator[AsyncSession, None]:
     """Dependency for providing asynchronous database sessions."""
